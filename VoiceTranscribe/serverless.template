@@ -1,0 +1,13 @@
+{
+  "Description": "A simple Lambda function saying \"Hello World\".",
+  "Resources": {
+    "HelloWorld": {
+      "Type": "AWS::Serverless::Function",
+      "Properties": {
+        "Handler": "com.serverless.voicetranscribe.function.HelloWorld",
+        "Runtime" : "java8",
+        "CodeUri" : "./target/voicetranscribe-1.0.0.jar"
+      }
+    }
+  }
+}
